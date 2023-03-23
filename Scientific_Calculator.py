@@ -46,4 +46,56 @@ def trig_cos():
     result = str(math.cos(math.radians(int(calc_operator))))
     calc_operator = result
     text_input.set(result)
+def trig_tan():
+    global calc_operator
+    result = str(math.tan(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+
+def trig_cot():
+    global calc_operator
+    result = str(1/math.tan(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+    
+def trig_asin():
+    global calc_operator
+    result = str(math.asin(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+    
+def trig_acos():
+    global calc_operator
+    result = str(math.acos(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+    
+def trig_atan():
+    global calc_operator
+    result = str(math.atan(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+    
+def trig_acot():
+    global calc_operator
+    result = str(1/math.atan(math.radians(int(calc_operator))))
+    calc_operator = result
+    text_input.set(result)
+
+def square_root():
+    global calc_operator
+    if int(calc_operator)>=0:
+        temp = str(eval(calc_operator+'**(1/2)'))
+        calc_operator = temp
+    else:
+        temp = "ERROR"
+    text_input.set(temp)
+def third_root():
+    global calc_operator
+    if int(calc_operator)>=0:
+        temp = str(eval(calc_operator+'**(1/3)'))
+        calc_operator = temp
+    else:
+        temp = "ERROR"
+    text_input.set(temp)
 
