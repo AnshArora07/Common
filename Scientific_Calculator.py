@@ -144,4 +144,52 @@ text_display = Entry(tk_calc, font=('sans-serif', 20, 'bold'), textvariable=text
 
 button_params = {'bd':5, 'fg':'#BBB', 'bg':'#3C3636', 'font':('sans-serif', 20, 'bold')}
 button_params_main = {'bd':5, 'fg':'#000', 'bg':'#BBB', 'font':('sans-serif', 20, 'bold')}
+button_params = {'bd':5, 'fg':'#BBB', 'bg':'#3C3636', 'font':('sans-serif', 20, 'bold')}
+button_params_main = {'bd':5, 'fg':'#000', 'bg':'#BBB', 'font':('sans-serif', 20, 'bold')}
 
+
+abs_value = Button(tk_calc, button_params, text='abs',
+                   command=lambda:button_click('abs(')).grid(row=1, column=0, sticky="nsew")
+
+modulo = Button(tk_calc, button_params, text='mod',
+                command=lambda:button_click('%')).grid(row=1, column=1, sticky="nsew")
+
+int_div = Button(tk_calc, button_params, text='div',
+                 command=lambda:button_click('//')).grid(row=1, column=2, sticky="nsew")
+
+factorial_button = Button(tk_calc, button_params, text='x!',
+                   command=fact_func).grid(row=1, column=3, sticky="nsew")
+
+eulers_num = Button(tk_calc, button_params, text='e',
+                    command=lambda:button_click(str(math.exp(1)))).grid(row=1, column=4, sticky="nsew")
+
+
+sine = Button(tk_calc, button_params, text='sin',
+             command=trig_sin).grid(row=2, column=0, sticky="nsew")
+
+cosine = Button(tk_calc, button_params, text='cos',
+             command=trig_cos).grid(row=2, column=1, sticky="nsew")
+
+tangent = Button(tk_calc, button_params, text='tan',
+             command=trig_tan).grid(row=2, column=2, sticky="nsew")
+
+cotangent = Button(tk_calc, button_params, text='cot',
+             command=trig_cot).grid(row=2, column=3, sticky="nsew")
+ 
+pi_num = Button(tk_calc, button_params, text='π',
+                command=lambda:button_click(str(math.pi))).grid(row=2, column=4, sticky="nsew")
+
+asine = Button(tk_calc, button_params, text='asin',
+             command=trig_asin).grid(row=3, column=0, sticky="nsew")
+
+acosine = Button(tk_calc, button_params, text='acos',
+             command=trig_acos).grid(row=3, column=1, sticky="nsew")
+
+atangent = Button(tk_calc, button_params, text='atan',
+             command=trig_atan).grid(row=3, column=2, sticky="nsew")
+
+acotangent = Button(tk_calc, button_params, text='acot',
+             command=trig_acot).grid(row=3, column=3, sticky="nsew")
+
+x_division = Button(tk_calc, button_params, text='1/x',
+             command=lambda:button_click('1/')).grid(row=3, column=4, sticky="nsew")
