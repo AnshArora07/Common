@@ -193,3 +193,62 @@ acotangent = Button(tk_calc, button_params, text='acot',
 
 x_division = Button(tk_calc, button_params, text='1/x',
              command=lambda:button_click('1/')).grid(row=3, column=4, sticky="nsew")
+
+second_power = Button(tk_calc, button_params, text='x\u00B2',
+             command=lambda:button_click('**2')).grid(row=4, column=0, sticky="nsew")
+
+third_power = Button(tk_calc, button_params, text='x\u00B3',
+             command=lambda:button_click('**3')).grid(row=4, column=1, sticky="nsew")
+
+nth_power = Button(tk_calc, button_params, text='x^n',
+             command=lambda:button_click('**')).grid(row=4, column=2, sticky="nsew")
+
+inv_power = Button(tk_calc, button_params, text='x\u207b\xb9',
+             command=lambda:button_click('**(-1)')).grid(row=4, column=3, sticky="nsew")
+
+tens_powers = Button(tk_calc, button_params, text='10^x', font=('sans-serif', 15, 'bold'),
+                     command=lambda:button_click('10**')).grid(row=4, column=4, sticky="nsew")
+
+
+square_root = Button(tk_calc, button_params, text='\u00B2\u221A',
+                     command=square_root).grid(row=5, column=0, sticky="nsew")
+
+third_root = Button(tk_calc, button_params, text='\u00B3\u221A',
+                    command=third_root).grid(row=5, column=1, sticky="nsew")
+
+nth_root = Button(tk_calc, button_params, text='\u221A',
+                  command=lambda:button_click('**(1/')).grid(row=5, column=2, sticky="nsew")
+
+log_base10 = Button(tk_calc, button_params, text='log\u2081\u2080', font=('sans-serif', 16, 'bold'),
+                   command=lambda:button_click('log(')).grid(row=5, column=3, sticky="nsew")
+
+log_basee = Button(tk_calc, button_params, text='ln',
+                   command=lambda:button_click('ln(')).grid(row=5, column=4, sticky="nsew")
+
+
+left_par = Button(tk_calc, button_params, text='(',
+                  command=lambda:button_click('(')).grid(row=6, column=0, sticky="nsew")
+
+right_par = Button(tk_calc, button_params, text=')',
+                   command=lambda:button_click(')')).grid(row=6, column=1, sticky="nsew")   
+
+signs = Button(tk_calc, button_params, text='\u00B1',
+               command=sign_change).grid(row=6, column=2, sticky="nsew")
+
+percentage = Button(tk_calc, button_params, text='%',
+               command=percent).grid(row=6, column=3, sticky="nsew")
+
+ex = Button(tk_calc, button_params, text='e^x',
+               command=lambda:button_click('e(')).grid(row=6, column=4, sticky="nsew")
+
+
+button_7 = Button(tk_calc, button_params_main, text='7',
+                  command=lambda:button_click('7')).grid(row=7, column=0, sticky="nsew")
+button_8 = Button(tk_calc, button_params_main, text='8',
+                  command=lambda:button_click('8')).grid(row=7, column=1, sticky="nsew")
+button_9 = Button(tk_calc, button_params_main, text='9',
+                  command=lambda:button_click('9')).grid(row=7, column=2, sticky="nsew")
+delete_one = Button(tk_calc, bd=5, fg='#000', font=('sans-serif', 20, 'bold'),
+              text='DEL', command=button_delete, bg='#db701f').grid(row=7, column=3, sticky="nsew")
+delete_all = Button(tk_calc, bd=5, fg='#000', font=('sans-serif', 20, 'bold'),
+              text='AC', command=button_clear_all, bg='#db701f').grid(row=7, column=4, sticky="nsew")
