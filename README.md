@@ -8,3 +8,7 @@ A graphing calculator has the ability to display plotted graphs for complex equa
 Implementation Our team addressed the problem that scientific calculators are expensive and are not easily available, even sometimes they are complicated to use, so we decided to replicate the math functions of the hardware calculator into our project using Python 3 , even further improved and added functions to it.
 
 Tools And Techniques used - Tkinter Module, pyplot module, math module, user defined functions
+It follows the rule of BODMAS.
+The calculator has lots of functions.
+
+
