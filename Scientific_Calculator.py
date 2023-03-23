@@ -252,3 +252,38 @@ delete_one = Button(tk_calc, bd=5, fg='#000', font=('sans-serif', 20, 'bold'),
               text='DEL', command=button_delete, bg='#db701f').grid(row=7, column=3, sticky="nsew")
 delete_all = Button(tk_calc, bd=5, fg='#000', font=('sans-serif', 20, 'bold'),
               text='AC', command=button_clear_all, bg='#db701f').grid(row=7, column=4, sticky="nsew")
+button_4 = Button(tk_calc, button_params_main, text='4',
+                  command=lambda:button_click('4')).grid(row=8, column=0, sticky="nsew")
+button_5 = Button(tk_calc, button_params_main, text='5',
+                  command=lambda:button_click('5')).grid(row=8, column=1, sticky="nsew")
+button_6 = Button(tk_calc, button_params_main, text='6',
+                  command=lambda:button_click('6')).grid(row=8, column=2, sticky="nsew")
+mul = Button(tk_calc, button_params_main, text='*',
+             command=lambda:button_click('*')).grid(row=8, column=3, sticky="nsew")
+div = Button(tk_calc, button_params_main, text='/',
+             command=lambda:button_click('/')).grid(row=8, column=4, sticky="nsew")
+
+
+button_1 = Button(tk_calc, button_params_main, text='1',
+                  command=lambda:button_click('1')).grid(row=9, column=0, sticky="nsew")
+button_2 = Button(tk_calc, button_params_main, text='2',
+                  command=lambda:button_click('2')).grid(row=9, column=1, sticky="nsew")
+button_3 = Button(tk_calc, button_params_main, text='3',
+                  command=lambda:button_click('3')).grid(row=9, column=2, sticky="nsew")
+add = Button(tk_calc, button_params_main, text='+',
+             command=lambda:button_click('+')).grid(row=9, column=3, sticky="nsew")
+sub = Button(tk_calc, button_params_main, text='-',
+             command=lambda:button_click('-')).grid(row=9, column=4, sticky="nsew")
+
+
+button_0 = Button(tk_calc, button_params_main, text='0',
+                  command=lambda:button_click('0')).grid(row=10, column=0, sticky="nsew")
+point = Button(tk_calc, button_params_main, text='.',
+               command=lambda:button_click('.')).grid(row=10, column=1, sticky="nsew")
+exp = Button(tk_calc, button_params_main, text='EXP', font=('sans-serif', 16, 'bold'),
+             command=lambda:button_click(E)).grid(row=10, column=2, sticky="nsew")
+equal = Button(tk_calc, button_params_main, text='=',
+               command=button_equal).grid(row=10, columnspan=2, column=3, sticky="nsew")
+
+
+tk_calc.mainloop()
