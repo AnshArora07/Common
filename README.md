@@ -10,5 +10,5 @@ Implementation Our team addressed the problem that scientific calculators are ex
 Tools And Techniques used - Tkinter Module, pyplot module, math module, user defined functions
 It follows the rule of BODMAS.
 The calculator has lots of functions.
-
+Our Calculator is a real calculator based project
 
